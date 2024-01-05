@@ -1,0 +1,18 @@
+<p>logintemplateform works!</p>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" novalidate>
+    <label for="userid">User name : </label>
+    <input type="text"  name="username" id="userid" 
+     placeholder="Enter user name" 
+     ngModel #txtusername="ngModel" 
+     required pattern="^[a-z A-Z]+$"/>
+     
+
+    <br><br>
+    <label for="userpwd">Password : </label>
+    <input type="password"  name="pwd"  
+     id="userpwd"  placeholder="Enter user password"
+     ngModel #txtpwd="ngModel" 
+     required minlength="5" maxlength="8"/>
+     <br><br>
+     <button type="submit">Login</button>
+</form>

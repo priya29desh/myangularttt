@@ -1,0 +1,13 @@
+<p>loginreactiveform works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <label for="userid">User name : </label>
+    <input type="text"  formControlName="username" id="userid" 
+     placeholder="Enter user name" />
+    <br><br>
+    <label for="userpwd">Password : </label>
+    <input type="password"  formControlName="pwd"  
+     id="userpwd"  placeholder="Enter user password"/>
+     <br><br>
+     <button type="submit">Login</button>
+</form>
+
